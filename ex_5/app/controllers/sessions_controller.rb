@@ -19,7 +19,6 @@ class SessionsController < ApplicationController
   def destroy
     flash[:notice] = "Logout successful!"
     log_out if logged_in?
-    log_out
     redirect_to '/'
   end
 end
